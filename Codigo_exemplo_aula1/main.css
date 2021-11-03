@@ -1,0 +1,20 @@
+h1 {
+  color: darkblue;
+  background-color: red;
+  margin: 50px 25px 5px 1px;
+  border: 10px solid greenyellow;
+}
+
+p {
+  border: 10px solid greenyellow;
+}
+
+.bordaAzul {
+  margin: 10px;
+  border: 10px solid blue;
+  padding: 5px;
+}
+
+.underline {
+  text-decoration: underline;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h1>Seletores complexos CSS</h1>
+
+    <section class="os-que-voce-conhece">
+      <h2>Você conhece esses (eu espero)</h2>
+      <p>seletor de tipo - <code>p</code></p>
+      <p>seletor de classe - <code>.class</code></p>
+      <p id="seletor">seletor de ID - <code>#id</code></p>
+    </section>
+
+    <section class="universal">
+      <h2><span>*</span>Universal</h2>
+      <p>
+        Esse seleciona TUDO. Todas as coisas<br />
+        (exceto ::before e ::after...).
+      </p>
+      <ul>
+        <li>Todas</li>
+        <li>As</li>
+        <li>Coisa</li>
+        <li><a href="#">Tudinho</a></li>
+      </ul>
+      <code>Sim, até isso, e todo o resto também.</code>
+    </section>
+
+    <section class="direct-children">
+      <h2><span></span>Filho direto</h2>
+      <p>Você pode criar um seletor tipo este:</p>
+      <code>.direct-children p</code>
+      <p>Ele irá selecionar todos os paragrafos dentro de .direct-children</p>
+      <div class="example">
+        <p>
+          Mas <code>.direct-child > p</code> não irá selecionar este paragrafo.
+        </p>
+      </div>
+    </section>
+
+    <section class="adjacent-sibling">
+      <h2><span>+</span>Adjacent sibling</h2>
+      <div class="box"></div>
+      <div class="box"></div>
+      <a href="">Não box</a>
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>
+
+    <section class="general-sibling">
+      <h2><span>~</span>General Sibling</h2>
+      <div class="box"></div>
+      <div class="box"></div>
+      <a href="#">não box</a>
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>
+
+    <section class="attribute">
+      <h2><span>[ ]</span>Attribute</h2>
+      <a href="https://www.google.com" class="link-one">Google</a>
+      <a href="https://www.google.com.br" class="link-two">Google Brasil</a>
+      <a href="about.html" class="link-three">About page</a>
+      <a
+        href="http://awesomesocialnetwork.com"
+        class="link-four"
+        target="_blank"
+        >Socializar</a
+      >
+      <a href="ebook.pdf" class="link-five">PDF file</a>
+      <a href="#" class="another-link">Yet another link</a>
+    </section>
+  </body>
+</html>
